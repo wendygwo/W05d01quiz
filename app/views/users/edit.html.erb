@@ -1,0 +1,10 @@
+<h1>Edit this user</h1>
+
+<%= form_for @user do |f| %>
+	<%= f.text_field :username %>
+	<%= f.text_field :email %>
+	<%= f.date_field :dob %>
+
+	<%=f.submit "Edit this user" %>
+
+<%end%>
